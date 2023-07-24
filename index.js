@@ -7,8 +7,7 @@ export let difficulty = "";
 
 for (let choiceInput of choiceInputs) {
     choiceInput.addEventListener("click", function (e) {
-        (difficulty = e.target.value), 
-        buttonDisabled(difficulty);
+        (difficulty = e.target.value), buttonDisabled(difficulty);
     });
 }
 
