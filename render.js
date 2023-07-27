@@ -1,4 +1,76 @@
-import { difficulty } from "./index.js";
+import {
+    difficulty,
+    hideWhatTheCard,
+    ListnerClicksInGame,
+    checkClick,
+} from "./index.js";
+import {
+    cardsForLightDiff,
+    cardsForMidDiff,
+    cardsForHardDiff,
+} from "./randomCards.js";
+
+console.log(cardsForLightDiff);
+console.log(cardsForMidDiff);
+console.log(cardsForHardDiff);
+
+export function randerFirstPage() {
+    const body = document.querySelector("body");
+    body.innerHTML = ` <main class="difficulty">
+    <section class="difficulty__box">
+        <p class="difficulty__box_text">
+            Выбери <br />
+            сложность
+        </p>
+        <article class="difficulty__box_difficulst">
+            <div>
+                <input
+                    type="radio"
+                    value="1"
+                    id="light__difficult"
+                    name="choice"
+                    class="difficulty__box_input"
+                />
+                <label
+                    for="light__difficult"
+                    class="difficulty__box_choice difficulty__box_light"
+                    >1</label
+                >
+            </div>
+            <div>
+                <input
+                    type="radio"
+                    value="2"
+                    id="mid__difficult"
+                    name="choice"
+                    class="difficulty__box_input"
+                />
+                <label
+                    for="mid__difficult"
+                    class="difficulty__box_choice difficulty__box_mid"
+                    >2</label
+                >
+            </div>
+            <div>
+                <input
+                    type="radio"
+                    value="3"
+                    id="hard__difficult"
+                    name="choice"
+                    class="difficulty__box_input"
+                />
+                <label
+                    for="hard__difficult"
+                    class="difficulty__box_choice difficulty__box_hard"
+                    >3</label
+                >
+            </div>
+        </article>
+        <button class="difficulty__box_button" disabled>Старт</button>
+    </section>
+</main>`;
+}
+
 
 export function randerGameBoard() {
     console.log(`сложность ${difficulty}`);
