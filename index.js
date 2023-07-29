@@ -1,6 +1,7 @@
 import { cardsForRandom } from "./randomCards.js";
 import { randerFirstPage, imia } from "./render.js";
 import "./style.css";
+import { renderResult } from "./render.js";
 
 randerFirstPage();
 
@@ -57,10 +58,12 @@ function checkGameResult() {
     }
     if (gameCards[1] === gameCards[0]) {
         alert("Ты победил");
+        renderResult(true);
         setTimeout(gameCards.splice(0, 2), 400);
     }
     if (gameCards[1] !== gameCards[0]) {
         alert("Ты проиграл");
+        renderResult(false);
         setTimeout(gameCards.splice(0, 2), 400);
     } else {
         return;
