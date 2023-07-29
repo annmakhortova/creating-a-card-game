@@ -1,8 +1,4 @@
-import {
-    cardsForHardDiff,
-    cardsForLightDiff,
-    cardsForMidDiff,
-} from "./randomCards.js";
+import { cardsForRandom } from "./randomCards.js";
 import { randerFirstPage, imia } from "./render.js";
 import "./style.css";
 
@@ -31,20 +27,8 @@ function buttonDisabled(difficulty) {
 choiceButton.addEventListener("click", function () {
     console.log(difficulty);
 
-    if (difficulty === "1") {
-        let cardsForGame = cardsForLightDiff.slice();
-        imia(cardsForGame);
-        return cardsForGame;
-    }
-    if (difficulty === "2") {
-        let cardsForGame = cardsForMidDiff.slice();
-        imia(cardsForGame);
-        return cardsForGame;
-    } else {
-        let cardsForGame = cardsForHardDiff.slice();
-        imia(cardsForGame);
-        return cardsForGame;
-    }
+    let cardsForGame = cardsForRandom.slice();
+    imia(cardsForGame);
 });
 
 export function hideWhatTheCard() {
@@ -86,19 +70,7 @@ function checkGameResult() {
 export function checkClick(button) {
     button.addEventListener("click", function () {
         console.log(difficulty);
-        if (difficulty === "1") {
-            let cardsForGame = cardsForLightDiff.slice();
-            imia(cardsForGame);
-            return cardsForGame;
-        }
-        if (difficulty === "2") {
-            let cardsForGame = cardsForMidDiff.slice();
-            imia(cardsForGame);
-            return cardsForGame;
-        } else {
-            let cardsForGame = cardsForHardDiff.slice();
-            imia(cardsForGame);
-            return cardsForGame;
-        }
+        let cardsForGame = cardsForRandom.slice();
+        imia(cardsForGame);
     });
 }

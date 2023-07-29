@@ -35,7 +35,7 @@ const cardThirtyFour = `<div id = "eight" class="card card-34"></div>`;
 const cardThirtyFive = `<div id = "seven" class="card card-35"></div>`;
 const cardThirtySix = `<div id = "six" class="card card-36"></div>`;
 
-const firstTwelvsCards = new Array(
+export const cardsForRandom = new Array(
     cardOne,
     cardTow,
     cardThree,
@@ -47,10 +47,7 @@ const firstTwelvsCards = new Array(
     cardNine,
     cardTen,
     cardEleven,
-    cardTwelv
-);
-
-const secondTwelvsCards = new Array(
+   cardTwelv,
     cardThirteen,
     cardFourteen,
     cardFifteen,
@@ -62,10 +59,7 @@ const secondTwelvsCards = new Array(
     cardTwentyOne,
     cardTwentyTwo,
     cardTwentyThree,
-    cardTwentyFour
-);
-
-const thirdTewlvsCards = new Array(
+    cardTwentyFour,
     cardTwentyFive,
     cardTwentySix,
     cardTwentySeven,
@@ -80,6 +74,3 @@ const thirdTewlvsCards = new Array(
     cardThirtySix
 );
 
-export const cardsForLightDiff = firstTwelvsCards;
-export const cardsForMidDiff = [...firstTwelvsCards, ...secondTwelvsCards];
-export const cardsForHardDiff = [...cardsForMidDiff, ...thirdTewlvsCards];
