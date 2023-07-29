@@ -241,6 +241,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .difficulty__box {
   width: 480px;
   height: 459px;
@@ -251,6 +252,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .difficulty__box_text {
   color: #004980;
   text-align: center;
@@ -259,6 +261,7 @@ body {
   line-height: 48px;
   padding-top: 52px;
 }
+
 .difficulty__box_difficulst {
   display: flex;
   flex-direction: row;
@@ -266,9 +269,11 @@ body {
   padding-top: 48px;
   gap: 24px;
 }
+
 .difficulty__box_difficulst input[type=radio] {
   display: none;
 }
+
 .difficulty__box_choice {
   display: flex;
   width: 97px;
@@ -285,11 +290,13 @@ body {
   background: #fff;
   cursor: pointer;
 }
+
 .difficulty__box_choice:hover {
   opacity: 0.8;
   box-shadow: black 2px 1px;
   transition: 0.3s;
 }
+
 .difficulty__box_button {
   display: flex;
   width: 246px;
@@ -309,15 +316,18 @@ body {
   line-height: 32px;
   cursor: pointer;
 }
+
 .difficulty__box_button:hover {
   opacity: 0.7;
   box-shadow: 3px 2px black;
   transition: 0.3s;
 }
+
 .difficulty__box_button:disabled {
   opacity: 0.3;
   cursor: not-allowed;
 }
+
 .difficulty__box_input:checked ~ label {
   background-color: #004980;
   color: #fff;
