@@ -6,23 +6,23 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "format": "prettier --write ./",
-        "lint.js": "eslint ./*.js",
-        "lint.css": "stylelint ./*.scss",
+        "lint.js": "eslint ./*.js --fix",
+        "lint.css": "stylelint ./*.scss --fix",
         "lint": "npm run lint.js && npm run lint.css",
         "build": "NODE_ENV=production webpack",
         "start": "webpack-dev-server --open"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Exm03/WD__COURSE__4__CARD__GAME.git"
+        "url": "git+https://github.com/annmakhortova/creating-a-card-game.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/Exm03/WD__COURSE__4__CARD__GAME/issues"
+        "url": "https://github.com/annmakhortova/creating-a-card-game/issues"
     },
-    "homepage": "https://github.com/Exm03/WD__COURSE__4__CARD__GAME#readme",
+    "homepage": "https://github.com/annmakhortova/creating-a-card-game#readme",
     "devDependencies": {
         "@babel/eslint-parser": "^7.22.7",
         "@typescript-eslint/eslint-plugin": "^5.61.0",
