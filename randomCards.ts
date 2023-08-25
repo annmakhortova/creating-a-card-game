@@ -35,7 +35,6 @@ const cardThirtyFour = `<div id = "eight_clubs" class="card card-34"></div>`;
 const cardThirtyFive = `<div id = "seven_clubs" class="card card-35"></div>`;
 const cardThirtySix = `<div id = "six_clubs" class="card card-36"></div>`;
 
-
 export const cardsForRandom = new Array(
     cardOne,
     cardTow,
@@ -48,7 +47,7 @@ export const cardsForRandom = new Array(
     cardNine,
     cardTen,
     cardEleven,
-   cardTwelv,
+    cardTwelv,
     cardThirteen,
     cardFourteen,
     cardFifteen,
@@ -74,4 +73,3 @@ export const cardsForRandom = new Array(
     cardThirtyFive,
     cardThirtySix
 );
-

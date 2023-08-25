@@ -6,24 +6,25 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "format": "prettier --write ./",
-        "lint.js": "eslint ./*.js --fix",
-        "lint.css": "stylelint ./*.scss --fix",
+        "lint.js": "eslint ./*.js",
+        "lint.css": "stylelint ./*.scss",
         "lint": "npm run lint.js && npm run lint.css",
         "build": "NODE_ENV=production webpack",
         "start": "webpack-dev-server --open"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/annmakhortova/creating-a-card-game.git"
+        "url": "git+https://github.com/Exm03/WD__COURSE__4__CARD__GAME.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/annmakhortova/creating-a-card-game/issues"
+        "url": "https://github.com/Exm03/WD__COURSE__4__CARD__GAME/issues"
     },
-    "homepage": "https://github.com/annmakhortova/creating-a-card-game#readme",
+    "homepage": "https://github.com/Exm03/WD__COURSE__4__CARD__GAME#readme",
     "devDependencies": {
+        "@babel/eslint-parser": "^7.22.7",
         "@typescript-eslint/eslint-plugin": "^5.61.0",
         "@typescript-eslint/parser": "^5.61.0",
         "copy-webpack-plugin": "^11.0.0",
@@ -33,11 +34,14 @@
         "html-webpack-plugin": "^5.5.3",
         "mini-css-extract-plugin": "^2.7.6",
         "prettier": "^2.8.8",
-        "stylelint": "^15.10.0",
         "style-loader": "^3.3.3",
+        "stylelint": "^15.10.0",
         "stylelint-config-standard": "^34.0.0",
         "stylelint-config-standard-scss": "^10.0.0",
         "stylelint-prettier": "^3.0.0",
+        "ts-loader": "^9.4.4",
+        "typescript": "^5.1.6",
+        "typescript-eslint-parser": "^22.0.0",
         "webpack": "^5.88.1",
         "webpack-cli": "^5.1.4",
         "webpack-dev-server": "^4.15.1"

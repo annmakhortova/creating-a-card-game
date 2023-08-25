@@ -6,8 +6,8 @@ import {
 } from "./index";
 import { checkClickInputs } from "./index";
 
-import image from "./static/Image.png";
-import badImage from "./static/Image (1).png";
+import image from "./static/image.png";
+import badImage from "./static/image (1).png";
 
 export function randerFirstPage() {
     const body = document.querySelector("body");
