@@ -41,7 +41,7 @@
         "stylelint-prettier": "^3.0.0",
         "ts-loader": "^9.4.4",
         "typescript": "^5.2.2",
-        "typescript-eslint-parser": "^22.0.0",
+        "typescript-eslint-parser": "^18.0.0",
         "webpack": "^5.88.1",
         "webpack-cli": "^5.1.4",
         "webpack-dev-server": "^4.15.1"
